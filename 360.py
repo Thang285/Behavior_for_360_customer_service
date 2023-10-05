@@ -89,6 +89,7 @@ def main():
             .option('password', PASSWORD) \
             .save()
     print('loading complete')
+    spark.stop()
 
 spark = SparkSession.builder.getOrCreate()    
 main()
